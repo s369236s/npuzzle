@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>d</title>
+    <link rel="stylesheet" type="text/css" href="game.css" />
+  </head>
+  <script defer src="script.js"></script>
+  <body>
+    <div class="loader"></div>
+    <div id="game">
+      <li class="tile" id="1"><span class="number">1</span></li>
+      <li class="tile" id="2"><span class="number">2</span></li>
+      <li class="tile" id="3"><span class="number">3</span></li>
+      <li class="tile" id="4"><span class="number">4</span></li>
+      <li class="tile" id="5"><span class="number">5</span></li>
+      <li class="tile" id="6"><span class="number">6</span></li>
+      <li class="tile" id="7"><span class="number">7</span></li>
+      <li class="tile" id="8"><span class="number">8</span></li>
+      <li class="tile" id="9"><span class="number">9</span></li>
+      <li class="tile" id="10"><span class="number">10</span></li>
+      <li class="tile" id="11"><span class="number">11</span></li>
+      <li class="tile" id="blank"><span></span></li>
+    </div>
+    <div class="chunk">
+      <li class="tile-1 foo"></li>
+      <li class="tile-2 foo"></li>
+      <li class="tile-3 foo"></li>
+      <li class="tile-4 foo"></li>
+      <li class="tile-5 foo"></li>
+      <li class="tile-6 foo"></li>
+      <li class="tile-7 foo"></li>
+      <li class="tile-8 foo"></li>
+      <li class="tile-9 foo"></li>
+      <li class="tile-10 foo"></li>
+      <li class="tile-11 foo"></li>
+    </div>
+    <div id="help">
+      <input type="checkbox" name="enablehelp" onchange="shownumbers();" />提示
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>發現了甚麼?</p>
+        <input class="input-1" type="text" />
+        <button class="button-1" onclick="checkAns()">提交</button>
+        <h5 class="ans-info"></h5>
+      </div>
+    </div>
+    <script>
+      window.onload = () => {
+        const body = document.body;
+        body.style.justifyContent = "flex-start";
+        const foo = document.getElementById("game");
+        const far = document.getElementById("help");
+        const bar = document.querySelector(".loader");
+        foo.style.display = "block";
+        help.style.display = "block";
+        bar.style.display = "none";
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+      };
+    </script>
+  </body>
+</html>
