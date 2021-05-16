@@ -398,7 +398,9 @@ const checkAns = () => {
     foo.innerHTML = "恭喜你答對了，3秒內跳轉至新畫面";
     document.querySelector(".input-1").readOnly = "true";
     setTimeout(() => {
-      window.open("https://www.instagram.com/prescriptionspuzzlesol/");
+      window.open(
+        "https://www.instagram.com/p/CO7tXU5nQGy/?igshid=gyvqn53xeono"
+      );
     }, 3000);
   } else {
     foo.innerHTML = "錯誤!!!";
