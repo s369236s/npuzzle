@@ -390,7 +390,7 @@ function shownumbers() {
 }
 
 const checkAns = () => {
-  const ans = "1";
+  const ans = "少精症";
   const foo = document.querySelector(".ans-info");
   const bar = document.querySelector(".input-1");
   const value = bar.value;
