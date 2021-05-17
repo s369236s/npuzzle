@@ -4,6 +4,7 @@
 }
 
 :root {
+  font-style: Monaco, 微軟正黑體;
   --bg-color: #f8f8f8;
   --loader-color: #b39cd0;
 }
@@ -319,7 +320,7 @@ div#frame {
   padding: 20px;
   border: 1px solid #888;
   width: 300px;
-  height: 18rem;
+  height: 22rem;
   align-items: center;
 }
 .input-1 {
@@ -370,6 +371,15 @@ h5 {
   padding: 0.5rem;
 }
 .ans-info {
+  margin: 0.25rem;
   opacity: 0;
   transition: 1s;
+}
+.change-page {
+  margin-top: 0.5rem;
+  transition: 1s;
+  font-size: 0.7rem;
+  color: #5e5eff;
+  border-radius: 5px;
+  background-color: #ff8a8a;
 }

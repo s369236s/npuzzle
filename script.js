@@ -164,7 +164,7 @@ function shuffle(array) {
 function setTiles(gameobj) {
   var a = gameobj.tiles;
 
-  // a = shuffle(a);
+  a = shuffle(a);
 
   var set = [
     [a[0], a[1], a[2]],
@@ -395,11 +395,18 @@ const checkAns = () => {
   const bar = document.querySelector(".input-1");
   const value = bar.value;
   if (value === ans) {
+    let a = document.createElement("a");
+    a.append("若沒沒跳轉，點我跳轉");
+    a.className = "change-page";
+    a.href =
+      "https://www.instagram.com/p/CO-aE-tHYdN/?utm_source=ig_web_copy_link";
+
     foo.innerHTML = "恭喜你答對了，3秒內跳轉至新畫面";
+    foo.appendChild(a);
     document.querySelector(".input-1").readOnly = "true";
     setTimeout(() => {
       window.open(
-        "https://www.instagram.com/p/CO7tXU5nQGy/?igshid=gyvqn53xeono"
+        "https://www.instagram.com/p/CO-aE-tHYdN/?utm_source=ig_web_copy_link"
       );
     }, 3000);
   } else {
