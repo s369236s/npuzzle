@@ -332,6 +332,11 @@ function isEqual(currentboard, winboard) {
   return true;
 }
 
+function openModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "flex";
+}
+
 function win() {
   // body...
 
@@ -360,8 +365,11 @@ function win() {
       console.log(3);
     }, 2002);
     setTimeout(() => {
+      const help = document.getElementById("help");
+      const oepn = document.querySelector(".open-popup");
       foo.style.margin = "0 auto";
-      console.log(3);
+      help.style.display = "none";
+      oepn.style.display = "block";
     }, 2100);
   }
 }
