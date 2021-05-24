@@ -406,16 +406,13 @@ const checkAns = () => {
     let a = document.createElement("a");
     a.append("若沒沒跳轉，點我跳轉");
     a.className = "change-page";
-    a.href =
-      "https://www.instagram.com/p/CO-aE-tHYdN/?utm_source=ig_web_copy_link";
+    a.href = "https://s369236s.github.io/ig-end-game/index.html";
 
     foo.innerHTML = "恭喜你答對了，3秒內跳轉至新畫面";
     foo.appendChild(a);
     document.querySelector(".input-1").readOnly = "true";
     setTimeout(() => {
-      window.open(
-        "https://www.instagram.com/p/CO-aE-tHYdN/?utm_source=ig_web_copy_link"
-      );
+      window.open("https://s369236s.github.io/ig-end-game/index.html");
     }, 3000);
   } else {
     foo.innerHTML = "錯誤!!!";
