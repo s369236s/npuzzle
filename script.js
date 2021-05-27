@@ -164,7 +164,7 @@ function shuffle(array) {
 function setTiles(gameobj) {
   var a = gameobj.tiles;
 
-  a = shuffle(a);
+  // a = shuffle(a);
 
   var set = [
     [a[0], a[1], a[2]],
